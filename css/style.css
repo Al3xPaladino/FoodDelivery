@@ -1,0 +1,111 @@
+*{
+  list-style: none;
+}
+
+.middle{
+  width: 400px;
+}
+.menu{
+  width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.item{
+  border-top: 1px solid #2980b9;
+  overflow: hidden;
+  width: 400px;
+}
+.butn{
+  display: block;
+  padding: 16px 20px;
+  background: #3498DB;
+  color: white;
+  position: relative;
+}
+.butn:before{
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background:#3498DB;
+  left: 20px;
+  bottom: -7px;
+  transform: rotate(45deg);
+}
+.butn i{
+  position: absolute;
+  right: 0%;
+  margin-right: 50px;
+}
+.smenu{
+  background: #333;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+}
+.smenu div{
+  width: 400px;
+  display: block;
+  height: auto;
+  padding: 16px 26px;
+  color: white;
+  font-size: 17px;
+  margin: 4px 0;
+  position: relative;
+}
+.smenu div:before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #3498DB;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.smenu div:hover:before{
+  opacity: 1;
+}
+.desc{
+  max-width: 100px!important;
+  overflow: hidden;
+}
+.cost{
+  text-align: right;
+}
+
+.item:target .smenu{
+  max-height: 10em;
+}
+.smenu::-webkit-scrollbar{
+  -webkit-overflow-scrolling: auto;
+  width: 8px;
+}
+.smenu::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #204d74;
+  box-shadow: 0 0 1px #3498DB;
+}
+.cart{
+  outline: none;
+  border: none;
+  padding: 8px 13px;
+  background-color: #28a745;
+  color: white;
+  opacity: 1;
+  right: 0%;
+  border-radius: 25rem;
+}
+.cart:hover{
+  opacity: 0.7;
+}
+.td1{
+  width: 200px;
+  text-align: left;
+}
+.td2, .td3{
+  width: 100px;
+  text-align: right;
+}
